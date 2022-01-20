@@ -1,0 +1,17 @@
+.hoso_position_re {
+    position: relative;
+}
+.hoso_position_re .hoso_position_ab {
+    margin-top: 11px;
+    width: 173px;
+    position: absolute;
+    left: 93px;
+    background: #ffffff;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.d_none {
+    display: none;
+}
