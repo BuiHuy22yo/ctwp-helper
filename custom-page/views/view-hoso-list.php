@@ -28,14 +28,14 @@ $get_role_current = $get_current_user->roles[0];
                         if ($get_role_current != 'nv_benh_vien' && $get_role_current != 'nv_bao_minh') { ?>
                             <select name="benhvien" style="margin-right:15px;width: 15%;">
                                 <option value=""><?php echo esc_html__('Bệnh viện', 'ctwp-helper'); ?></option>
-                                <?php $organizations = ctwp_get_option('organization');
-                                if (!empty($organizations)) { ?>
-                                    <?php foreach ($organizations as $organization) { ?>
-                                        <option placeholder="Bệnh viện" <?php echo (isset($_POST['benhvien']) && $_POST['benhvien'] == $organization['text']) ? 'selected' : ''; ?>>
-                                            <?php echo $organization['text'] ?>
-                                        </option>
-                                    <?php }
-                                } ?>
+<!--                                --><?php //$organizations = ctwp_get_option('organization');
+//                                if (!empty($organizations)) { ?>
+<!--                                    --><?php //foreach ($organizations as $organization) { ?>
+<!--                                        <option placeholder="Bệnh viện" --><?php //echo (isset($_POST['benhvien']) && $_POST['benhvien'] == $organization['text']) ? 'selected' : ''; ?><!-->-->
+<!--                                            --><?php //echo $organization['text'] ?>
+<!--                                        </option>-->
+<!--                                    --><?php //}
+//                                } ?>
                             </select>
                         <?php }
                         ?>
