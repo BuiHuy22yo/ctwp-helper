@@ -54,10 +54,10 @@ if (!class_exists('CTWP_Helper')) {
             define('CTWP_METABOX_HOSO', '_ctwp_hoso_options');
 
 
-            define('CTWP_ELEMENTS_VERSION', '1.0.0' );
+            define('CTWP_ELEMENTS_VERSION', '1.0.0');
             define('CTWP_ELEMENTS_PATH', plugin_dir_path(__FILE__));
             define('CTWP_ELEMENTS_NAME', plugin_basename(__FILE__));
-            define('CTWP_ELEMENTS_URL', plugin_dir_url( __FILE__ ));
+            define('CTWP_ELEMENTS_URL', plugin_dir_url(__FILE__));
         }
 
         // load helper.
@@ -102,7 +102,8 @@ if (!class_exists('CTWP_Helper')) {
         public function enqueue_admin_scripts()
         {
 
-//            wp_enqueue_style('fft_fontawesome-back-end', "https://use.fontawesome.com/releases/v5.12.0/css/all.css");
+            wp_enqueue_style('fa5', 'https://use.fontawesome.com/releases/v5.13.0/css/all.css', array(), '5.13.0', 'all');
+            wp_enqueue_style('ctwp-lib-bootstrap', CTWP_HELPER_DIR_URL . 'assets/build/library/bootstrap/bootstrap.min.css', array(), false);
             wp_enqueue_style('ctwp-style-main', CTWP_HELPER_DIR_URL . 'assets/build/css/main.css', array(), false);
 
 
